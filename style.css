@@ -12,6 +12,12 @@ body {
 .left-sidebar{
     background-color: beige;
     flex: 1 1 20%;
+    padding: 1%;
+}
+.left-sidebar > span{
+    
+    text-align: center;
+    font-size: large;
 }
 .right-side{
     background-color: crimson;
@@ -20,25 +26,37 @@ body {
     flex-direction: column;
 }
 .top-bar{
-    flex: 1 1 30%;
+    flex: 1 1 20%;
     background-color:orange;
     display: flex;
     flex-direction: column;
+    padding: 1%;
 }
+
 .top-bar-top{
-    flex: 1 1 50%;
+    flex: 1 1 30%;
     border: 1px;
     border-style: dotted;
     background-color: rebeccapurple;
+    display: flex;
+    
    
 }
+.left-top{
+    flex: 1;
+}
+.right-top{
+    flex: 1;
+}
+
 .top-bar-bottom{
-    flex: 1 1 50%;
+    flex: 1;
     background-color: bisque;
+    display: flex;
 }
 
 .bottom-bar{
-    flex:1 1 70%;
+    flex:1 1 80%;
     background-color: blue;
     display: flex;
 }
@@ -71,6 +89,7 @@ body {
     background-color: gold;
     display: flex;
     flex-direction: column;
+    padding: 0 1.2% 1.2% 1.2%;
 }
 .bottom-right > div{
     flex: 1;
