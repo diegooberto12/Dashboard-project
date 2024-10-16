@@ -19,6 +19,9 @@ body {
     text-align: center;
     font-size: large;
 }
+.left-sidebar > ul{
+    list-style-type:none;
+}
 .right-side{
     background-color: crimson;
     flex: 1 1 80%;
@@ -50,7 +53,7 @@ body {
 }
 
 .top-bar-bottom{
-    flex: 1;
+    flex: 1 1 70%;
     background-color: bisque;
     display: flex;
 }
