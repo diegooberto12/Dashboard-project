@@ -34,6 +34,8 @@ span > img, li > img{
 }
 .left-sidebar > ul{
     list-style-type:none;
+    position: sticky;
+    top: 30px;
 }
 .right-side{
     background-color: crimson;
@@ -154,19 +156,41 @@ h3{
   }
 .square{
     background-color: aqua;
-    border-radius: 2px;
+    border-radius: 40px;
     border: 4px;
-    border-style: dotted;
     color: black;
     display: flex; 
     height: 400px;
     flex-direction: column;
+    padding: 1em;
 }
 .square > img {
     flex: 3;
     width: 100%;
     /* max-width: 650px; */
     max-height: 14rem;
+    border-radius: 1em;
+    margin-bottom: 1em;
+}
+.buttom-styles{
+    display: flex;
+    justify-content: end;
+    align-self: end;
+    margin-top: 1.5em;
+    margin-right: 1.5em;
+    gap: 10px;
+}
+.button-animation{
+    background: none;
+    border: none;
+    border-radius: 5px;
+}
+.button-animation:hover{
+    background: #f0f0f0;;
+}
+.img-buttom{
+    width: 2em;
+    height: 2em;
 }
 .bottom-right{
     flex: 1;
