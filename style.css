@@ -195,9 +195,10 @@ h3{
 .bottom-right{
     flex: 1;
     background-color: gold;
-    display: flex;
+    /* display: flex; */
     flex-direction: column;
     padding: 0 1.2% 1.2% 1.2%;
+    
 }
 .bottom-right > div{
     flex: 1;
@@ -205,11 +206,12 @@ h3{
     flex-direction: column;
 }
 .bottom-right > div > .square {
-    flex: 1;
-    /* height: 100%;
-    width: 100%; */
+    /* flex: 1; */
+    height: auto;
+    /* width: 100%; */
     background-color: brown;
 }
+
 .child-square{
     display: flex;
     flex-direction: column;
@@ -232,16 +234,27 @@ h3{
     display: flex;
     height: 100%;
     width: 100%;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
-.child-person > div > img{
-    width: 1rem;
-    height: 1rem;
+.child-person > div > div > img{
+    width: 4em;
+    height: 13em;
+    position: relative;
+    top: -40px;
     
 }
 .child-person > div{
     display: flex;
-    flex: 1;
-    width: 1em;
-    height: 1em;
+    /* flex: 1; */
+    /* width: 18em; */
+    height: 6em;
+    flex-direction: row;
+}
+.child-person > div > div {
+    display: flex;
+}
+.child-person > div > div:last-child{
     flex-direction: column;
+    padding: 0px;
 }
