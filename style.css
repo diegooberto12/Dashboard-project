@@ -1,3 +1,7 @@
+:root{
+    --main-bg-color: cornflowerblue;
+}
+
 body {
     margin: 0;
     display: flex;
@@ -12,9 +16,10 @@ body {
     min-height: 100vh;
 }
 .left-sidebar{
-    background-color: beige;
+    background-color: black;
     flex: 1 1 20%;
     padding: 1%;
+    color: white;
     
 }
 .left-sidebar > span{
@@ -36,27 +41,33 @@ span > img, li > img{
     list-style-type:none;
     position: sticky;
     top: 30px;
+    text-decoration: none;
+}
+a{
+    color: inherit;
+    text-decoration: none;
+    font-weight: normal;
 }
 .right-side{
-    background-color: crimson;
+    background-color: var(--main-bg-color);
     flex: 1 1 80%;
     display: flex;
     flex-direction: column;
 }
 .top-bar{
     flex: 1 1 20%;
-    background-color:orange;
+    background-color:var(--main-bg-color);
     display: flex;
     flex-direction: column;
     overflow:visible;
     position: sticky;
-    top: -5.8em;
+    top: -3.8em;
 }
 
 .top-bar-top{
     flex: 1 1 0%;
     border: 1px;
-    background-color: rebeccapurple;
+    background-color: var(--main-bg-color);
     display: flex;
     overflow: hidden;
    
@@ -96,10 +107,11 @@ form > input{
 
 .top-bar-bottom{
     flex: 1 1 0%;
-    background-color: bisque;
+    background-color: #ddba00d6;
     display: flex;
     position: static;
     top: 0px;
+    padding-right: 16px;
 }
 .left-bottom{
     flex: 1;
@@ -107,19 +119,36 @@ form > input{
 .left-bottom > h3{
     display: flex;
     align-self: center;
+    position: relative;
+    bottom: -7px;
+  
 }
 .right-bottom{
     display: flex;
     align-items: center;
     gap: 6px;
 }
+.right-bottom > button{
+    cursor: pointer;
+    padding: 0.5em;
+    letter-spacing: 0.16px;
+    background-color: #00000000;
+    outline: none;
+    border: 1px solid #0f62fe;
+}
+.right-bottom > button:hover{
+    background-color: #0353e9;
+                        color: #fff;
+}
 
 h3 > img{
-    width: 7%;
-    height: 1em;
+    width: 3em;
+    height: 2em;
     vertical-align: top;
     margin-right: 1em;
-    
+    position: relative;
+    top: -9px;
+    right: -17px;
 }
 
 .bottom-bar{
@@ -129,7 +158,7 @@ h3 > img{
 }
 .bottom-left {
     flex: 3;
-    background-color: brown;
+    background-color: var(--main-bg-color);
     display: flex;
     flex-direction: column;
     padding: 0 1.2% 1.2% 1.2%;
@@ -155,7 +184,7 @@ h3{
     }
   }
 .square{
-    background-color: aqua;
+    background-color: #4e6faa;
     border-radius: 20px;
     border: 4px;
     color: black;
@@ -209,7 +238,7 @@ h3{
     /* flex: 1; */
     height: auto;
     /* width: 100%; */
-    background-color: brown;
+    background-color: var(--main-bg-color);
 }
 
 .child-square{
